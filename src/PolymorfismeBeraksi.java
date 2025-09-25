@@ -6,13 +6,7 @@ class Balok {
         this.l = l;
         this.t = t;
     }
-
-    public Balok() {
-        this.p = 1;
-        this.l = 1;
-        this.t = 1;
-    }
-
+    
     public double volume() {
         return p * l * t;
     }
@@ -53,18 +47,18 @@ public class PolymorfismeBeraksi {
         Balok b = new Balok(4, 3, 2);
         Kubus k = new Kubus(5);
 
-        System.out.println("=== Data Balok ===");
+        System.out.println("Data Balok");
         System.out.println("Volume Balok        : " + b.volume());
         System.out.println("Luas Permukaan Balok: " + b.luasPermukaan());
         b.cetak();
 
-        System.out.println("\n=== Data Kubus ===");
+        System.out.println("\nData Kubus");
         System.out.println("Volume Kubus        : " + k.volume());
         System.out.println("Luas Permukaan Kubus: " + k.luasPermukaan());
         k.cetak();
 
         Balok polymorphObj = new Kubus(7);
-        System.out.println("\n=== Polymorphism (Balok = Kubus) ===");
+        System.out.println("\nPolymorphism (Balok = Kubus)");
         System.out.println("Volume: " + polymorphObj.volume());
         System.out.println("Luas Permukaan: " + polymorphObj.luasPermukaan());
         polymorphObj.cetak();
